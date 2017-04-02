@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  get 'acupuntura/inicio'
-  get 'acupuntura/contacto'
+  get 'inicio' => 'acupuntura#inicio'
+  get 'sobre' => 'acupuntura#sobre'
+  get 'acupuntura' => 'acupuntura#acupuntura'
+  get 'tratamientos' => 'acupuntura#tratamientos'
+  get 'prensa' => 'acupuntura#prensa'
+  get 'contacto' => 'acupuntura#contacto'
 
   root 'acupuntura#inicio'
 

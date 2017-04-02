@@ -10,7 +10,7 @@ body {
 	font-size: 13px;
 	color: #061C37;
 	background: #EEEFE4;
-	background-image:url(images/background.png);
+	background-image:url('background.png');
 	background-repeat:repeat-x;
 }
 *
@@ -20,9 +20,9 @@ body {
 
 #container
 {
-  display: block; 
+  display: block;
   height:auto;
-  position: relative; 
+  position: relative;
   width: 940px;
 }
 
@@ -31,10 +31,10 @@ body {
 	position:absolute;
 text-align:right;
 color:#F8FDEE;
-font-size:30px;
-color:#FFF;	
-left:60px;
-top:20px;
+font-size:40px;
+color:#FFF;
+left:15px;
+top:5px;
 }
 
 
@@ -42,17 +42,21 @@ top:20px;
 {
 position:absolute;
 text-align:right;
-color:#E1E7F7;	
-left:60px;
-top:50px;
+color:black;
+left:150px;
+top:60px;
+font-family:'Great Vibes';
+font-size: 25px
 }
 
 #mainpic
 {
-background-image:url(images/main.jpg);
+background-image:url('facial acupuncture 70pc.png');
 background-repeat:no-repeat;
-width:900px;
-height:354px;	
+width:940px;
+height:460px;
+display: block;
+margin: 0 auto;
 }
 
 
@@ -60,7 +64,8 @@ height:354px;
 .off
 {
 color:#3A6028;
-	
+font-family: Architects Daughter;
+
 }
 
 
@@ -68,7 +73,7 @@ color:#3A6028;
 
 #menu
 {
-background-image:url(images/menu.png);
+background-image:url('menu.png');
 background-repeat:no-repeat;
 width:940px;
 height:69px;
@@ -111,9 +116,9 @@ color:#7198E1;
 
 #menu li {
 	list-style: none;
-	padding: 0px;	
-	display: inline; 
-	
+	padding: 0px;
+	display: inline;
+
 }
 
 #menu a {
@@ -135,7 +140,7 @@ color:#7198E1;
 
 #content p
 {
-	
+
 }
 
 
