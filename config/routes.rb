@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'acupuntura/inicio'
+  get 'acupuntura/contacto'
 
   root 'acupuntura#inicio'
 
