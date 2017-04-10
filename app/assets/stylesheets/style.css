@@ -1,6 +1,8 @@
 /* A Free Design by Bryant Smith (bryantsmith.com) */
 
-
+.hidden {
+	display: none;
+}
 
 body {
 	margin: 0;
