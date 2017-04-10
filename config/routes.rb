@@ -8,7 +8,7 @@ resources "contacts", only: [:new, :create]
   get 'prensa' => 'acupuntura#prensa'
   get 'contacto' => 'acupuntura#contacto'
   get 'new' => 'contacts#new'
-  get 'create' => 'contacts'
+  get 'create' => 'contacts#create'
 
   root 'acupuntura#inicio'
 
