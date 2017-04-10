@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+resources "contacts", only: [:new, :create]
+
   get 'inicio' => 'acupuntura#inicio'
   get 'sobre' => 'acupuntura#sobre'
   get 'acupuntura' => 'acupuntura#acupuntura'
