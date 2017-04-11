@@ -9,9 +9,9 @@ Rails.application.configure do
       :domain         => 'heroku.com',
       :enable_starttls_auto => true
       }
-    end
+    
       # more code here
-end
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
