@@ -1,4 +1,49 @@
-/* A Free Design by Bryant Smith (bryantsmith.com) */
+/* Dropdown Button */
+.dropbtn {
+	 background-color: transparent;
+	 color: white;
+	 padding: 13px;
+	 font-size: 16px;
+	 border: none;
+	 cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	 position: relative;
+	 display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	 display: none;
+	 position: absolute;
+	 background-color: #3e8e41;
+	 min-width: 160px;
+	 box-shadow: 40px 8px 16px 10px rgba(0,0,0,0.2);
+	 z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	 color: black;
+	 padding: 0px 16px;
+	 text-decoration: none;
+	 display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	 display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	 background-color: #3e8e41;
+}/* A Free Design by Bryant Smith (bryantsmith.com) */
 
 .hidden {
 	display: none;
@@ -22,7 +67,7 @@ body {
 
 #container
 {
-  display: block;
+	display: block;
   height:auto;
   position: relative;
   width: 940px;
@@ -65,11 +110,17 @@ margin: 0 auto;
 
 .off
 {
+color:#black;
+font-family: Helvetica;
+font-size: 16px;
+
+}
+.off2
+{
 color:#3A6028;
 font-family: Architects Daughter;
 
 }
-
 
 
 
@@ -78,8 +129,7 @@ font-family: Architects Daughter;
 background-image:url('menu.png');
 background-repeat:no-repeat;
 width:940px;
-height:69px;
-float:left;
+height:49px;
 clear:both;
 }
 
@@ -87,7 +137,7 @@ clear:both;
 {
 width:880px;
 height:auto;
-background-color:#FFF;
+// background-image: url("wood-texture.jpg");
 padding-left:10px;
 padding-right:10px;
 padding-bottom:5px;
@@ -118,7 +168,7 @@ color:#7198E1;
 
 #menu li {
 	list-style: none;
-	padding: 0px;
+	padding: 7px;
 	display: inline;
 
 }
