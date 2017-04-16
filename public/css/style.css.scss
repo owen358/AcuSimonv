@@ -68,9 +68,9 @@ body {
 #container
 {
 	display: block;
-  height: auto;
+  height:auto;
   position: relative;
-  width: 940;
+  width: 940px;
 }
 
 #mainpic h1
@@ -98,10 +98,10 @@ font-size: 25px
 
 #mainpic
 {
-// background-image:url('facial acupuncture 70pc.png');
+background-image:url('facial acupuncture 70pc.png');
 background-repeat:no-repeat;
-width:590px;
-// height:580px;
+width:840px;
+// height:560px;
 display: block;
 margin: 0 auto;
 }
@@ -119,7 +119,7 @@ font-size: 16px;
 {
 color:#3A6028;
 font-family: Architects Daughter;
-
+float: right;
 }
 
 
