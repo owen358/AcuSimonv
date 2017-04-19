@@ -98,6 +98,7 @@ height:auto;
 padding-left:10px;
 padding-right:10px;
 padding-bottom:5px;
+font-family: Arial;
 }
 
 #footer
@@ -132,7 +133,8 @@ color:#7198E1;
 
 #menu a {
 	float: left;
-	width: 150px;
+		// width means width of individual "buttons" on menu i.e. narrower to fit more options
+	width: 125px;
 	height: 40px;
 	display: block;
 	text-align: center;

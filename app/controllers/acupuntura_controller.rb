@@ -14,6 +14,9 @@ class AcupunturaController < ApplicationController
   def prensa
   end
 
+  def precios
+  end
+
   def contacto
   end
 end
