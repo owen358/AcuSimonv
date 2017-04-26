@@ -1,7 +1,11 @@
+.hidden {
+	display: none;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	text-align: left;
+	text-align: justify;	
 	font: 12px Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #061C37;
@@ -137,7 +141,7 @@ color:#7198E1;
 #menu a {
 	float: left;
 	// width means width of individual "buttons" on menu i.e. narrower to fit more options
-	width: 125px;
+	width: 145px;
 	height: 40px;
 	display: block;
 	text-align: center;
