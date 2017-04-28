@@ -8,13 +8,13 @@ class AcupunturaController < ApplicationController
   def acupuntura
   end
 
-  def tratamientos
+  def ciencia
   end
 
   def prensa
   end
 
-  def precios
+  def tratamientos
   end
 
   def contacto
