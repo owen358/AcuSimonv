@@ -1,3 +1,48 @@
+.style_image {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.style_image2 {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 50%;
+}
+
+.style_image3 {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 5%;
+  float: center;
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+.style_image4 {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 5%;
+  float: right;
+  // padding: 10px;
+  display: block;
+  margin: 20px 30px 20px 20px;
+  // width: 40%;
+}
+
+.style_image5 {
+  // display: inline;
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 5%;
+  float: left;
+  // padding-right: 10px;
+  margin-right: 20px;
+  display: inline-block;
+  // margin: auto;
+  width: 40%;
+}
+
 .hidden {
 	display: none;
 }
@@ -5,7 +50,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	text-align: justify;	
+	text-align: justify;
 	font: 12px Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #061C37;
@@ -68,13 +113,14 @@ margin: 0 auto;
 .off
 {
 color:#black;
-font-family: Helvetica;
-font-size: 16px;
+font-family: Architects Daughter;
+font-size: 24px;
 
 }
 .off2
 {
 color:#3A6028;
+// color:#f10000;
 font-family: Architects Daughter;
 font-size: 50px;
 text-align: center;
@@ -88,13 +134,22 @@ font-size: 30px;
 text-align: center;
 }
 
+.off4
+{
+color:#black;
+font-family: Helvetica;
+font-size: 10px;
+}
+
 #menu
 {
 background-image:url('menu.png');
 background-repeat:no-repeat;
-width:940px;
+width:1040px;
+// width:1100px;
 height:49px;
 clear:both;
+// float: center;
 }
 
 #content
@@ -128,7 +183,7 @@ color:#7198E1;
 	list-style: none;
 	padding: 0px;
 	margin-left:auto;
-	width:900px;
+	width:1040px;
 }
 
 #menu li {
@@ -141,7 +196,8 @@ color:#7198E1;
 #menu a {
 	float: left;
 	// width means width of individual "buttons" on menu i.e. narrower to fit more options
-	width: 145px;
+	// width: 145px;
+  width: 145px;
 	height: 40px;
 	display: block;
 	text-align: center;

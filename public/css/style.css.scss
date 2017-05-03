@@ -1,10 +1,15 @@
+.style_image {
+  border-right: 1opx solid #000;
+}
+
 .hidden {
 	display: none;
 }
+
 body {
 	margin: 0;
 	padding: 0;
-	text-align: justify;
+	text-align: left;
 	font: 12px Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #061C37;
@@ -83,6 +88,13 @@ font-size: 30px;
 text-align: center;
 }
 
+.off4
+{
+color:#black;
+font-family: Helvetica;
+font-size: 10px;
+}
+
 
 #menu
 {
@@ -137,7 +149,7 @@ color:#7198E1;
 #menu a {
 	float: left;
 		// width means width of individual "buttons" on menu i.e. narrower to fit more options
-	width: 145px;
+	width: 125px;
 	height: 40px;
 	display: block;
 	text-align: center;
