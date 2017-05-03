@@ -160,7 +160,12 @@ height:auto;
 padding-left:10px;
 padding-right:10px;
 padding-bottom:5px;
-font-family: Arial;
+// font-family: Arial;
+font-family: 'PT Sans';
+// font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+word-spacing: 2px;
 }
 
 #footer
@@ -214,7 +219,9 @@ color:#7198E1;
 
 #content p
 {
-
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
 }
 
 
