@@ -26,7 +26,7 @@
   float: right;
   // padding: 10px;
   display: block;
-  margin: 20px 30px 20px 20px;
+  margin: 20px 20px 20px 20px;
   // width: 40%;
 }
 
@@ -54,8 +54,9 @@ body {
 	font: 12px Arial, Helvetica, sans-serif;
 	font-size: 13px;
 	color: #061C37;
-	background: #EEEFE4;
-	background-image:url('background.png');
+	// background: #EEEFE4;
+  background: #F7F8ED;
+	background-image:url('background2.png');
 	background-repeat:repeat-x;
 }
 *
@@ -112,7 +113,8 @@ margin: 0 auto;
 
 .off
 {
-color:#black;
+// color:#black;
+color:#866400;
 font-family: Architects Daughter;
 font-size: 24px;
 
