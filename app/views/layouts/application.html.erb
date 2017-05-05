@@ -8,7 +8,11 @@
     <!-- bxSlider Javascript file -->
     <script src="/js/jquery.bxslider.min.js"></script>
 
-    <script>
+    <!-- bxSlider CSS file -->
+<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+
+
+    <!-- <script>
     $(document).ready(function(){
       $('.bxslider').bxSlider({
         mode: 'fade',
@@ -17,10 +21,9 @@
         pause: 4000
       });
     });
-    </script>
+    </script> -->
 
-    <!-- bxSlider CSS file -->
-<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+
 
 <!-- fonts -->
     <link rel="stylesheet" type="text/css"
@@ -44,6 +47,16 @@
   </head>
 
   <body>
+    <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        auto: true,
+        autoControls: true,
+        pause: 4000
+      });
+    });
+    </script>
 
 
     <div id="container">
