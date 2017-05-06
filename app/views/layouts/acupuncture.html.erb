@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="/js/jquery.bxslider.min.js"></script>
+
+    <!-- bxSlider CSS file -->
+<link href="/lib/jquery.bxslider.css" rel="stylesheet" />
+
+
+    <!-- <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        auto: true,
+        autoControls: true,
+        pause: 4000
+      });
+    });
+    </script> -->
+
+
+
+<!-- fonts -->
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Architects Daughter">
+    <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Great Vibes">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  -->
+
+    <title>Acupuntura Simon Verde</title>
+    <%= csrf_meta_tags %>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- bxSlider CSS file -->
+    <link href="/css/jquery.bxslider.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+
+    <!-- <a class="language" href="home">ENGLISH</a>   -->
+    <a class="language" href="inicio">ESPAÑOL</a>
+
+    <script>
+    $(document).ready(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        auto: true,
+        autoControls: true,
+        pause: 4000
+      });
+    });
+    </script>
+
+
+    <div id="container">
+    		<div id="mainpic">
+          <br>
+          <ul class="bxslider">
+            <!-- <li><%= image_tag "facial acupuncture 70pc" %></li> -->
+            <li><%= image_tag "face1" %></li>
+            <li><%= image_tag "facebw" %></li>
+            <li><%= image_tag "face2" %></li>
+            <li><%= image_tag "face8" %></li>
+            <li><%= image_tag "tcm50pc" %></li>
+          </ul>
+
+            </div>
+            </div>
+
+
+            <h1 class="off2">Acupuntura Cosmetica</h1>
+              <h2 class="off3">Simon Verde</h2>
+</div>
+<div id="menu">
+<ul>
+
+
+  	  <li class="menuitem"><a href="home">Home</a></li>
+      <li class="menuitem"><a href="acupuncture">Acupuncture & TCM</a></li>
+      <li class="menuitem"><a href="science">Science</a></li>
+      <li class="menuitem"><a href="skin">Skin</a></li>
+      <!-- <li class="menuitem"><a href="sobre">Sobre Nosotros</a></li> -->
+      <li class="menuitem"><a href="press">Press</a></li>
+      <li class="menuitem"><a href="treatments">Treatments </a></li>
+      <li class="menuitem"><a href="prices">Prices</a></li>
+      <li class="menuitem"><a href="new">Contact</a></li>
+      </ul>
+    </div>
+
+            </div>
+
+    		<div id="content">
+
+
+               	<p>&nbsp;</p>
+
+            	<%= yield %>
+
+                <p>&nbsp;</p>
+            	<p>&nbsp;</p>
+            	<p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+                <div id="footer"><h3><a href="http://www.acupunturasimonverde.com">Acupuntura Simon Verde</a></div>
+          </div>
+       </div>
+
+
+  </body>
+</html>

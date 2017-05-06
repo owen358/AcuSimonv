@@ -1,4 +1,28 @@
 Rails.application.routes.draw do
+  # get 'acupuncture/home'
+
+  # get 'acupuncture/acupuncture'
+  #
+  # get 'acupuncture/science'
+  #
+  # get 'acupuncture/skin'
+  #
+  # get 'acupuncture/press'
+  #
+  # get 'acupuncture/treatments'
+  #
+  # get 'acupuncture/prices'
+  #
+  # get 'acupuncture/contact'
+  #
+  get 'home' => 'acupuncture#home'
+  get 'acupuncture' => 'acupuncture#acupuncture'
+  get 'science' => 'acupuncture#science'
+  get 'press' => 'acupuncture#prensa'
+  get 'treatments' => 'acupuncture#treatments'
+  get 'prices' => 'acupuncture#prices'
+  get 'contacto' => 'contacts#new'
+
 resources "contacts", only: [:new, :create]
 
   get 'inicio' => 'acupuntura#inicio'
