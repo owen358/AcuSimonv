@@ -26,13 +26,14 @@ Rails.application.routes.draw do
 resources "contacts", only: [:new, :create]
 
   get 'inicio' => 'acupuntura#inicio'
-  get 'sobre' => 'acupuntura#sobre'
+  # get 'sobre' => 'acupuntura#sobre'
   get 'acupuntura' => 'acupuntura#acupuntura'
   get 'ciencia' => 'acupuntura#ciencia'
+  get 'piel' => 'acupuntura#piel'
   get 'prensa' => 'acupuntura#prensa'
   get 'tratamientos' => 'acupuntura#tratamientos'
   get 'precios' => 'acupuntura#precios'
-  get 'contacto' => 'acupuntura#contacto'
+  # get 'contacto' => 'acupuntura#contacto'
   get 'new' => 'contacts#new'
   post 'create' => 'contacts#create'
 
