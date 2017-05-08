@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   get 'home' => 'acupuncture#home'
   get 'acupuncture' => 'acupuncture#acupuncture'
   get 'science' => 'acupuncture#science'
-  get 'press' => 'acupuncture#prensa'
+  get 'press' => 'acupuncture#press'
   get 'treatments' => 'acupuncture#treatments'
   get 'prices' => 'acupuncture#prices'
   get 'contacto' => 'contacts#new'
