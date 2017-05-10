@@ -11,7 +11,7 @@ class AcupunturaController < ApplicationController
   def ciencia
   end
 
-  def piel
+  def lo_natural
   end
 
   def prensa

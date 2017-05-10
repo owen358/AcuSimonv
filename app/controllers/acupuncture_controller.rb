@@ -8,7 +8,7 @@ class AcupunctureController < ApplicationController
   def science
   end
 
-  def skin
+  def natural
   end
 
   def press
