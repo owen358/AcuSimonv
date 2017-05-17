@@ -1,0 +1,439 @@
+/** VARIABLES
+===================================*/
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+  position: relative;
+  margin-bottom: 60px;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+.bx-wrapper img {
+  max-width: 10%;
+  display: block;
+}
+.bxslider {
+  margin: 0;
+  padding: 0;
+}
+ul.bxslider {
+  list-style: none;
+}
+.bx-viewport {
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+}
+/** THEME
+===================================*/
+.bx-wrapper {
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 5px solid #fff;
+  background: #fff;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url('images/bx_loader.gif') center center no-repeat #ffffff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+/* PAGER */
+.bx-wrapper .bx-pager {
+  text-align: center;
+  font-size: .85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  padding-top: 20px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+  background: #000;
+}
+.bx-wrapper .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+  display: inline-block;
+  vertical-align: bottom;
+  *zoom: 1;
+  *display: inline;
+}
+.bx-wrapper .bx-pager-item {
+  font-size: 0;
+  line-height: 0;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+  left: 10px;
+  background: url('images/controls.png') no-repeat 0 -32px;
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-prev:focus {
+  background-position: 0 0;
+}
+.bx-wrapper .bx-next {
+  right: 10px;
+  background: url('images/controls.png') no-repeat -43px -32px;
+}
+.bx-wrapper .bx-next:hover,
+.bx-wrapper .bx-next:focus {
+  background-position: -43px 0;
+}
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  background: url('images/controls.png') -86px -11px no-repeat;
+  margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active,
+.bx-wrapper .bx-controls-auto .bx-start:focus {
+  background-position: -86px 0;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  background: url('images/controls.png') -86px -44px no-repeat;
+  margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active,
+.bx-wrapper .bx-controls-auto .bx-stop:focus {
+  background-position: -86px -33px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+  text-align: left;
+  width: 80%;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+  right: 0;
+  width: 35px;
+}
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #666;
+  background: rgba(80, 80, 80, 0.75);
+  width: 100%;
+}
+.bx-wrapper .bx-caption span {
+  color: #fff;
+  font-family: Arial;
+  display: block;
+  font-size: .85em;
+  padding: 10px;
+}
+.bx-wrapper{position:relative;margin-bottom:60px;padding:0;-ms-touch-action:pan-y;touch-action:pan-y;-moz-box-shadow:0 0 5px #ccc;-webkit-box-shadow:0 0 5px #ccc;box-shadow:0 0 5px #ccc;border:5px solid #fff;background:#fff}.bx-wrapper img{max-width:100%;display:block}.bxslider{margin:0;padding:0}ul.bxslider{list-style:none}.bx-viewport{-webkit-transform:translatez(0)}.bx-wrapper .bx-controls-auto,.bx-wrapper .bx-pager{position:absolute;bottom:-30px;width:100%}.bx-wrapper .bx-loading{min-height:50px;background:url(images/bx_loader.gif) center center no-repeat #fff;height:100%;width:100%;position:absolute;top:0;left:0;z-index:2000}.bx-wrapper .bx-pager{text-align:center;font-size:.85em;font-family:Arial;font-weight:700;color:#666;padding-top:20px}.bx-wrapper .bx-pager.bx-default-pager a{background:#666;text-indent:-9999px;display:block;width:10px;height:10px;margin:0 5px;outline:0;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.bx-wrapper .bx-pager.bx-default-pager a.active,.bx-wrapper .bx-pager.bx-default-pager a:focus,.bx-wrapper .bx-pager.bx-default-pager a:hover{background:#000}.bx-wrapper .bx-controls-auto .bx-controls-auto-item,.bx-wrapper .bx-pager-item{display:inline-block;vertical-align:bottom}.bx-wrapper .bx-pager-item{font-size:0;line-height:0}.bx-wrapper .bx-prev{left:10px;background:url(images/controls.png) 0 -32px no-repeat}.bx-wrapper .bx-prev:focus,.bx-wrapper .bx-prev:hover{background-position:0 0}.bx-wrapper .bx-next{right:10px;background:url(images/controls.png) -43px -32px no-repeat}.bx-wrapper .bx-next:focus,.bx-wrapper .bx-next:hover{background-position:-43px 0}.bx-wrapper .bx-controls-direction a{position:absolute;top:50%;margin-top:-16px;outline:0;width:32px;height:32px;text-indent:-9999px;z-index:9999}.bx-wrapper .bx-controls-direction a.disabled{display:none}.bx-wrapper .bx-controls-auto{text-align:center}.bx-wrapper .bx-controls-auto .bx-start{display:block;text-indent:-9999px;width:10px;height:11px;outline:0;background:url(images/controls.png) -86px -11px no-repeat;margin:0 3px}.bx-wrapper .bx-controls-auto .bx-start.active,.bx-wrapper .bx-controls-auto .bx-start:focus,.bx-wrapper .bx-controls-auto .bx-start:hover{background-position:-86px 0}.bx-wrapper .bx-controls-auto .bx-stop{display:block;text-indent:-9999px;width:9px;height:11px;outline:0;background:url(images/controls.png) -86px -44px no-repeat;margin:0 3px}.bx-wrapper .bx-controls-auto .bx-stop.active,.bx-wrapper .bx-controls-auto .bx-stop:focus,.bx-wrapper .bx-controls-auto .bx-stop:hover{background-position:-86px -33px}.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{text-align:left;width:80%}.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{right:0;width:35px}.bx-wrapper .bx-caption{position:absolute;bottom:0;left:0;background:#666;background:rgba(80,80,80,.75);width:100%}.bx-wrapper .bx-caption span{color:#fff;font-family:Arial;display:block;font-size:.85em;padding:10px}
+/* line 1, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+/* line 6, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.red_text {
+  color: red;
+}
+
+/* line 10, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.language {
+  padding-left: 1100px;
+  color: white;
+}
+
+/* line 19, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.style_image {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+/* line 24, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.style_image2 {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 50%;
+}
+
+/* line 30, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.style_image3 {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 5%;
+  float: center;
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+/* line 40, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.style_image4 {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 8%;
+  float: right;
+  display: block;
+  margin: 20px 20px 20px 20px;
+}
+
+/* line 51, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.style_image5 {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  border-radius: 5%;
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  width: 40%;
+}
+
+/* line 65, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.hidden {
+  display: none;
+}
+
+/* line 69, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  font: 12px Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #061C37;
+  background: #F7F8ED;
+  background-image: url("background2.png");
+  background-repeat: repeat-x;
+}
+
+/* line 81, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+* {
+  margin: 0 auto 0 auto;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* line 90, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#container {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 940;
+}
+
+/* line 98, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#mainpic h1 {
+  position: absolute;
+  text-align: right;
+  color: #F8FDEE;
+  font-size: 40px;
+  color: #FFF;
+  left: 15px;
+  top: 5px;
+}
+
+/* line 110, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#mainpic h2 {
+  position: absolute;
+  text-align: center;
+  color: black;
+  left: 150px;
+  top: 60px;
+  font-family: 'Great Vibes';
+  font-size: 25px;
+}
+
+/* line 121, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#mainpic {
+  background-repeat: no-repeat;
+  width: 590px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 133, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.off {
+  color: #866400;
+  font-family: Architects Daughter;
+  font-size: 24px;
+}
+
+/* line 141, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.off2 {
+  color: #866400;
+  font-family: Architects Daughter;
+  font-size: 50px;
+  text-align: center;
+}
+
+/* line 150, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.off3 {
+  color: #000;
+  font-family: Great Vibes;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* line 158, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+.off4 {
+  color: #black;
+  font-family: Helvetica;
+  font-size: 10px;
+}
+
+/* line 165, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#menu {
+  background-image: url("menu.png");
+  background-repeat: no-repeat;
+  width: 980px;
+  height: 49px;
+  clear: both;
+}
+
+/* line 176, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#content {
+  text-align: justify;
+  width: 880px;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 500;
+  word-spacing: 2px;
+}
+
+/* line 193, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#footer {
+  width: inherit;
+  height: auto;
+}
+
+/* line 199, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#footer h3 a, #footer h3 a:visited {
+  display: inline;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  color: #7198E1;
+}
+
+/* line 216, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#menu ul {
+  list-style: none;
+  padding: 0px;
+  margin-left: auto;
+  width: 980px;
+}
+
+/* line 223, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#menu li {
+  list-style: none;
+  padding: 0px;
+  display: inline;
+}
+
+/* line 230, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#menu a {
+  float: left;
+  width: 140px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding-top: 17px;
+  font-size: 15px;
+}
+
+/* line 245, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#menu a:hover {
+  color: #BEE399;
+}
+
+/* line 249, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+#content p {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 257, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+html, body {
+  text-align: center;
+}
+
+/* line 260, C:/Sites/AcuSimonv/app/assets/stylesheets/style.css.scss */
+p {
+  text-align: left;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
