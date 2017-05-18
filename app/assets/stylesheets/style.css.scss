@@ -4,7 +4,8 @@
        }
 
 .red_text {
-  color: red
+  color: red;
+  // font-size: 50px;
 }
 
 .language {
@@ -19,6 +20,13 @@
 .style_image {
   border: 5px double #3A6028;
   box-shadow: 10px 10px 5px #888888;
+}
+
+.style_image_discount {
+  border: none;
+  float: right;
+  padding-right: 200px
+  // box-shadow: 10px 10px 5px #888888;
 }
 
 .style_image2 {
@@ -145,6 +153,7 @@ font-size: 24px;
 font-family: Architects Daughter;
 font-size: 50px;
 text-align: center;
+padding-left: 300px
 }
 
 .off3
@@ -153,6 +162,7 @@ color:#000;
 font-family: Great Vibes;
 font-size: 30px;
 text-align: center;
+padding-left: 300px
 }
 
 .off4
