@@ -1,5 +1,25 @@
 <div align="center">
-  <h1 class="off">Envia un mensaje</h1>
+  <h1 class="off">Envía un mensaje</h1>
+
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var uluru = {lat: 37.342165, lng: -6.033519};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjmX1giHXLn4ll8wdNP9LCbE511yhHL0U&callback=initMap">
+  </script>
+
+
 <br>
   <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
     <%= f.input :name, :required => true %><br>
@@ -17,9 +37,9 @@
 
 <br><br>
 
-<h1 class="off">Acupuntura Cosmetica Simon Verde</h1><br>
+<h1 class="off">Acupuntura Cosmética Simon Verde</h1><br>
 
-Calle Fernán Caballero 4<br>
+Calle Fernán Caballero No.4<br>
 Gelves (Simon Verde)<br>
 41120<br>
 Sevilla<br>
@@ -36,20 +56,3 @@ Fácil aparcamiento
  -->
 <br>
 <h3></h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 37.342165, lng: -6.033519};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjmX1giHXLn4ll8wdNP9LCbE511yhHL0U&callback=initMap">
-    </script>
