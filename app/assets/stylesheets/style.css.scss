@@ -91,6 +91,16 @@
   width: 60%;
 }
 
+.style_image7 {
+  border: 5px double #3A6028;
+  box-shadow: 10px 10px 5px #888888;
+  // border-radius: 5%;
+  float: center;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
 .hidden {
 	display: none;
 }
@@ -166,6 +176,15 @@ color:#866400;
 font-family: Architects Daughter;
 font-size: 24px;
 
+}
+
+.off_right
+{
+// color:#black;
+color:#866400;
+font-family: Architects Daughter;
+font-size: 24px;
+text-align: right;
 }
 
 .off_small
