@@ -207,7 +207,7 @@ font-size: 20px;
 font-family: Architects Daughter;
 font-size: 70px;
 text-align: center;
-padding-left: 350px
+// padding-left: 200px
 }
 
 .off3
@@ -216,7 +216,7 @@ color:#000;
 font-family: Great Vibes;
 font-size: 30px;
 text-align: center;
-padding-left: 320px
+// padding-left: 320px
 }
 
 .off4
@@ -227,11 +227,13 @@ font-size: 10px;
 }
 
 #menu
+// menu bar green background
 {
 background-image:url('menu.png');
 background-repeat:no-repeat;
-// width:1120px; uncomment if you put back lo natural/the natural way page
-width:980px;
+width:1120px;
+// uncomment/comment if you put back/take out lo natural/the natural way page
+// width:980px;
 height:49px;
 clear:both;
 // float: center;
@@ -281,7 +283,8 @@ color:#7198E1;
 	list-style: none;
 	padding: 0px;
 	margin-left:auto;
-	width:980px;
+	// width:980px;
+  width:1120px;
 }
 
 #menu li {

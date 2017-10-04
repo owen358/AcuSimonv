@@ -30,7 +30,7 @@ resources "contacts", only: [:new, :create]
   # get 'sobre' => 'acupuntura#sobre'
   get 'acupuntura' => 'acupuntura#acupuntura'
   get 'ciencia' => 'acupuntura#ciencia'
-  get 'lo_natural' => 'acupuntura#lo_natural'
+  get 'sobre' => 'acupuntura#sobre'
   get 'prensa' => 'acupuntura#prensa'
   get 'tratamientos' => 'acupuntura#tratamientos'
   get 'precios' => 'acupuntura#precios'
